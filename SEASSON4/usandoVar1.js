@@ -2,7 +2,7 @@
     {
         {
             {
-                var sera = "Será???"
+                var sera = "Será??????"
             }
         }
     }
@@ -12,8 +12,7 @@
 console.log(sera);
 
 function teste(){
-    var local = 123;
+    var local = 123; //dentro de uma funcao a variavel fica limitada a função
 }
 
 teste();
-console.log(local);
