@@ -5,10 +5,8 @@ retornará o valor da aplicação sob o regime de juros compostos. */
 
 function jurosSimples(capitalInicial, taxaDeJuros, tempoDeAplicacao){
   const valorCapitalInicial = isNaN(capitalInicial) ? 0 : capitalInicial;
-  let valorTaxaDeJuros = isNaN(taxaDeJuros) ? 0 : taxaDeJuros;
+  const valorTaxaDeJuros = (isNaN(taxaDeJuros) ? 0 : taxaDeJuros) / 100;
   const valorTempoDeAplicacao = isNaN(tempoDeAplicacao) ? 0 : tempoDeAplicacao;
-
-  valorTaxaDeJuros = taxaDeJuros / 100;
 
   let montante = valorCapitalInicial * valorTaxaDeJuros * valorTempoDeAplicacao;
   montante = (Math.round(montante * 100) / 100).toFixed(2);
@@ -18,10 +16,8 @@ function jurosSimples(capitalInicial, taxaDeJuros, tempoDeAplicacao){
 
 function jurosCompostos (capitalInicial, taxaDeJuros, tempoDeAplicacao){
   const valorCapitalInicial = isNaN(capitalInicial) ? 0 : capitalInicial;
-  let valorTaxaDeJuros = isNaN(taxaDeJuros) ? 0 : taxaDeJuros;
+  const valorTaxaDeJuros = (isNaN(taxaDeJuros) ? 0 : taxaDeJuros) / 100;
   const valorTempoDeAplicacao = isNaN(tempoDeAplicacao) ? 0 : tempoDeAplicacao;
-
-  valorTaxaDeJuros = taxaDeJuros / 100;
 
   let montante = valorCapitalInicial * Math.pow((1 - valorTaxaDeJuros), valorTempoDeAplicacao);
   montante = (Math.round(montante * 100) / 100).toFixed(2);
