@@ -2,14 +2,14 @@
 e o resto da divisão destes dois valores.*/
 
 function divisao (a, b){
-  a = isNaN(a) ? 0 : a;
-  b = isNaN(b) ? 0 : b;
+  const valorA = isNaN(a) ? 0 : a;
+  const valorB = isNaN(b) ? 0 : b;
 
-  if ((a === 0) || (b === 0)) {
+  if ((valorA === 0) || (valorB === 0)) {
     console.log('Favor inserir números válidos');
   } else {
-  const divisao = a / b;
-  const resto =  a % b;
+  const divisao = valorA / valorB;
+  const resto =  valorA % valorB;
 
   console.log(`Resultado da divisão ${divisao} \nResto da divisão ${resto}`);
 }

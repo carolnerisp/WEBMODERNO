@@ -5,15 +5,15 @@ ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemá
 triângulo)*/
 
 function triangle (a, b, c){
-  a = isNaN(a) ? 0 : a;
-  b = isNaN(b) ? 0 : b;
-  c = isNaN(c) ? 0 : c;
+  const valorA = isNaN(a) ? 0 : a;
+  const valorB = isNaN(b) ? 0 : b;
+  const valorC = isNaN(c) ? 0 : c;
   
-  if (a <= 0 || b <= 0 || c <= 0) {
+  if (valorA <= 0 || valorB <= 0 || valorC <= 0) {
     return 'Os três lados precisam ser maiores que 0'
-  } else if (a === b && b === c ){
+  } else if (valorA === valorB && b === valorC ){
     return 'Triângulo Equilátero'
-  } else if (a !== b && b!== c && a !== c) {
+  } else if (valorA !== valorB && valorB!== valorC && valorA !== valorC) {
     return 'Triângulo Escaleno'
   } else {
     return 'Triângulo Isósceles'

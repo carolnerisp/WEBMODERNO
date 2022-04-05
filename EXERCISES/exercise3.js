@@ -1,10 +1,10 @@
 /*Crie uma função que recebe dois parâmetros, base e expoente, e retorne a base elevada ao expoente */
 
 function expoente (base, expoente){
-  base = isNaN(base) ? 0 : base;
-  expoente = isNaN (expoente) ? 0 : expoente;
+  const valorBase = isNaN(base) ? 0 : base;
+  const valorExpoente = isNaN (expoente) ? 0 : expoente;
 
-  return resultado = Math.pow(base, expoente);
+  return resultado = Math.pow(valorBase, valorExpoente);
 }
 
 console.log('O resultado é: ', expoente(2, 2));
