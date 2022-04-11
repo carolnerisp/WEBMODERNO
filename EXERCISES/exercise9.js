@@ -20,10 +20,8 @@ function calculaAprovacao(n){
 
   if (notaFinal < 38){
     return `Nota final = ${notaFinal} - REPROVADO`
-  } else if (notaFinal  % 5 == 3 || notaFinal  % 5 == 4 ){
-    while (notaFinal % 5 != 0){
-      notaFinal = notaFinal + 1;
-    }    
+  } else if (notaFinal  % 5 >= 3){
+    notaFinal = notaFinal - (notaFinal % 5) + 5;
   }
   
   return `Nota final = ${notaFinal} - APROVADO`
@@ -33,6 +31,5 @@ function calculaAprovacao(n){
 console.log(calculaAprovacao(84));
 console.log(calculaAprovacao(29));
 console.log(calculaAprovacao(38));
-
 
 
