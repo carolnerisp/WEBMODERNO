@@ -4,9 +4,9 @@ escassez de kiwis”. Caso melancia, retorne: “Aqui está, são 3 reais o quil
 também um default, que retornará uma mensagem de erro no console. */
 
 const fruta = function testaFruta(x){
-  const nomeFruta = (x.toString().toUpperCase());
+  const nomeFruta = x.toString();
 
-  switch (nomeFruta) {
+  switch (nomeFruta.toUpperCase()) {
     case 'MAÇÃ' :
       console.log('Não vendemos esta fruta aqui');
       break
@@ -20,7 +20,7 @@ const fruta = function testaFruta(x){
       break
 
       default :
-      console.log('ERRO!');
+      console.error('ERRO!');
       break
   }  
 

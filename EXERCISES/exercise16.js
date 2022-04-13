@@ -25,7 +25,7 @@ const calculadora = function calcular(num1, num2, operacao){
      break
 
     default:
-      console.log('Operador inválido')
+      console.error('Operador inválido')
       break
   }
 }

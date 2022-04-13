@@ -7,9 +7,9 @@ Nas outras opções, retorne: “Tem certeza que não prefere este modelo?”.
 Caso seja especificado um modelo que não está disponível, retorne no console: “Não trabalhamos com este tipo de automóvel aqui”. */
 
 const compraCarro = function validarCarro(x){
-  const carro = (x.toString().toUpperCase());
+  const carro = x.toString();
 
-  switch (carro){
+  switch (carro.toUpperCase()){
     case 'HATCH' :
       console.log('Compra efetuada com sucesso');
       break
@@ -19,7 +19,7 @@ const compraCarro = function validarCarro(x){
         break
       
       default:
-        console.log('Não trabalhamos com este tipo de automóvel aqui');
+        console.error('Não trabalhamos com este tipo de automóvel aqui');
   }
 }
 

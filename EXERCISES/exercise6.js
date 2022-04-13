@@ -19,7 +19,7 @@ function jurosCompostos (capitalInicial, taxaDeJuros, tempoDeAplicacao){
   const valorTaxaDeJuros = (isNaN(taxaDeJuros) ? 0 : taxaDeJuros) / 100;
   const valorTempoDeAplicacao = isNaN(tempoDeAplicacao) ? 0 : tempoDeAplicacao;
 
-  let montante = valorCapitalInicial * Math.pow((1 - valorTaxaDeJuros), valorTempoDeAplicacao);
+  let montante = valorCapitalInicial * Math.pow((1 + valorTaxaDeJuros), valorTempoDeAplicacao);
   montante = (Math.round(montante * 100) / 100).toFixed(2);
 
   return montante;

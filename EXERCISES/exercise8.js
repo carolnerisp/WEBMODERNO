@@ -16,14 +16,14 @@ function comparaJogos(pontuacoes){
   let maiorPontuacao = 0;
   let quando = 0;
   let pontuacaoAnterior = 0;
-  let menorPontuacao = 0;
+  let menorPontuacao;
 
   const pontuacoesArray = pontuacoes.split(' ');  
 
   for (i in pontuacoesArray){
     const pontuacaoAtual = parseFloat(pontuacoesArray[i]);
     
-    if (i == 0){
+    if (menorPontuacao === undefined){
        menorPontuacao = pontuacaoAtual;
     }
 
