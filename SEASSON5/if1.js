@@ -13,7 +13,7 @@ function seForVerdadeEuFalo(valor){
     }
 }
 
-seForVerdadeEuFalo();
+/*seForVerdadeEuFalo();
 seForVerdadeEuFalo(null);
 seForVerdadeEuFalo(undefined);
 seForVerdadeEuFalo(NaN);
@@ -22,6 +22,6 @@ seForVerdadeEuFalo(0);
 seForVerdadeEuFalo(-1);
 seForVerdadeEuFalo(' ');
 seForVerdadeEuFalo('?');
-seForVerdadeEuFalo([]);
+seForVerdadeEuFalo([]);*/
 seForVerdadeEuFalo([1,2]);
 seForVerdadeEuFalo({});
